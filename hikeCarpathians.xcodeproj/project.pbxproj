@@ -14,6 +14,9 @@
 		CE0A3943270DEDCA003E6AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0A3942270DEDCA003E6AFE /* Assets.xcassets */; };
 		CE0A3946270DEDCA003E6AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0A3944270DEDCA003E6AFE /* LaunchScreen.storyboard */; };
 		CE0A3954270E0928003E6AFE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A3953270E0928003E6AFE /* AuthorizationViewController.swift */; };
+		CE68A084272300760030F665 /* MyRoutesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A083272300760030F665 /* MyRoutesVC.swift */; };
+		CE68A086272300AB0030F665 /* RoutesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A085272300AB0030F665 /* RoutesVC.swift */; };
+		CE68A088272300D30030F665 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68A087272300D30030F665 /* ProfileVC.swift */; };
 		CE7F222A27228CBB00C152D9 /* AppTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7F222927228CBB00C152D9 /* AppTabBar.storyboard */; };
 		CE84E707270F6DD40040D21C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84E706270F6DD40040D21C /* RegistrationViewController.swift */; };
 		CE88D17B271EBB9400819551 /* RestorePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D17A271EBB9400819551 /* RestorePasswordViewController.swift */; };
@@ -30,6 +33,9 @@
 		CE0A3945270DEDCA003E6AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0A3947270DEDCA003E6AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0A3953270E0928003E6AFE /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		CE68A083272300760030F665 /* MyRoutesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutesVC.swift; sourceTree = "<group>"; };
+		CE68A085272300AB0030F665 /* RoutesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesVC.swift; sourceTree = "<group>"; };
+		CE68A087272300D30030F665 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		CE7F222927228CBB00C152D9 /* AppTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppTabBar.storyboard; sourceTree = "<group>"; };
 		CE84E706270F6DD40040D21C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		CE88D17A271EBB9400819551 /* RestorePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewController.swift; sourceTree = "<group>"; };
@@ -71,8 +77,11 @@
 				CE0A393D270DEDC7003E6AFE /* ViewController.swift */,
 				CE0A393F270DEDC7003E6AFE /* Main.storyboard */,
 				CE0A3953270E0928003E6AFE /* AuthorizationViewController.swift */,
+				CE68A085272300AB0030F665 /* RoutesVC.swift */,
 				CE84E706270F6DD40040D21C /* RegistrationViewController.swift */,
+				CE68A087272300D30030F665 /* ProfileVC.swift */,
 				CE88D17A271EBB9400819551 /* RestorePasswordViewController.swift */,
+				CE68A083272300760030F665 /* MyRoutesVC.swift */,
 				CE0A3942270DEDCA003E6AFE /* Assets.xcassets */,
 				CE7F222927228CBB00C152D9 /* AppTabBar.storyboard */,
 				CE88D17C271EEE1C00819551 /* AppColors.xcassets */,
@@ -158,8 +167,11 @@
 				CE0A3954270E0928003E6AFE /* AuthorizationViewController.swift in Sources */,
 				CE0A393E270DEDC7003E6AFE /* ViewController.swift in Sources */,
 				CE0A393A270DEDC7003E6AFE /* AppDelegate.swift in Sources */,
+				CE68A088272300D30030F665 /* ProfileVC.swift in Sources */,
 				CE0A393C270DEDC7003E6AFE /* SceneDelegate.swift in Sources */,
+				CE68A086272300AB0030F665 /* RoutesVC.swift in Sources */,
 				CE88D17B271EBB9400819551 /* RestorePasswordViewController.swift in Sources */,
+				CE68A084272300760030F665 /* MyRoutesVC.swift in Sources */,
 				CE84E707270F6DD40040D21C /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
