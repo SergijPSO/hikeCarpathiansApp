@@ -51,7 +51,7 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
         authPassField.rightView = toglePassButton
         authPassField.rightViewMode = .always
     }
-
+    //Button color toggle
     func toggleButtonState() {
         switch authEmailField.text!.isEmpty {
         case true:
