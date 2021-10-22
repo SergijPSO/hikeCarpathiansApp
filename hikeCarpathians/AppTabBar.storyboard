@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsN-77-VZB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Профіль-->
+        <scene sceneID="CjT-UI-PHF">
+            <objects>
+                <viewController id="HPI-Ks-QJN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TVC-T5-a3i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bXc-2L-Yc1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профіль" image="profileIcon" id="1vC-pu-YOT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1j-yQ-c0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="431"/>
+        </scene>
+        <!--Маршрути-->
+        <scene sceneID="auO-nB-ecl">
+            <objects>
+                <viewController id="S8z-Xc-6et" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CyG-m8-DOi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uZY-Z9-MJi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Маршрути" image="routesIcon" id="xM3-FA-R5n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vai-aF-QYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="431"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eYg-Ju-7VA">
+            <objects>
+                <tabBarController id="wsN-77-VZB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nP6-bb-W6o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="appOrange"/>
+                        <color key="barTintColor" name="appOrange"/>
+                        <color key="selectedImageTintColor" name="appOrange"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="S8z-Xc-6et" kind="relationship" relationship="viewControllers" id="ebl-cb-ZxJ"/>
+                        <segue destination="HPI-Ks-QJN" kind="relationship" relationship="viewControllers" id="jel-tz-zpW"/>
+                        <segue destination="swa-3R-RX5" kind="relationship" relationship="viewControllers" id="PAc-AC-Nlt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kil-Em-dYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="-298"/>
+        </scene>
+        <!--Мої маршрути-->
+        <scene sceneID="8oe-S7-7AY">
+            <objects>
+                <viewController id="swa-3R-RX5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XJU-gG-jEp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ddo-04-CnJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Мої маршрути" image="myroutesIcon" id="VlC-2Y-k6M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJb-0l-4Df" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="myroutesIcon" width="28" height="30"/>
+        <image name="profileIcon" width="29" height="30"/>
+        <image name="routesIcon" width="28" height="30"/>
+        <namedColor name="appOrange">
+            <color red="1" green="0.58399999141693115" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
