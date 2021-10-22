@@ -48,7 +48,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         registrationPassField.rightView = toglePassButton
         registrationPassField.rightViewMode = .always
     }
-    
+    //Botton color toggle
     func toggleButtonState() {
         switch registrationEmailField.text!.isEmpty {
         case true:
