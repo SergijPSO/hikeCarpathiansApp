@@ -21,6 +21,7 @@
 		CE84E707270F6DD40040D21C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84E706270F6DD40040D21C /* RegistrationViewController.swift */; };
 		CE88D17B271EBB9400819551 /* RestorePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D17A271EBB9400819551 /* RestorePasswordViewController.swift */; };
 		CE88D17D271EEE1C00819551 /* AppColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE88D17C271EEE1C00819551 /* AppColors.xcassets */; };
+		CE95BB0827254FC700001FAD /* CustomAppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95BB0727254FC700001FAD /* CustomAppStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CE84E706270F6DD40040D21C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		CE88D17A271EBB9400819551 /* RestorePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewController.swift; sourceTree = "<group>"; };
 		CE88D17C271EEE1C00819551 /* AppColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColors.xcassets; sourceTree = "<group>"; };
+		CE95BB0727254FC700001FAD /* CustomAppStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				CE0A3939270DEDC7003E6AFE /* AppDelegate.swift */,
 				CE0A393B270DEDC7003E6AFE /* SceneDelegate.swift */,
 				CE0A393D270DEDC7003E6AFE /* ViewController.swift */,
+				CE95BB0727254FC700001FAD /* CustomAppStyles.swift */,
 				CE0A393F270DEDC7003E6AFE /* Main.storyboard */,
 				CE0A3953270E0928003E6AFE /* AuthorizationViewController.swift */,
 				CE68A085272300AB0030F665 /* RoutesVC.swift */,
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE95BB0827254FC700001FAD /* CustomAppStyles.swift in Sources */,
 				CE0A3954270E0928003E6AFE /* AuthorizationViewController.swift in Sources */,
 				CE0A393E270DEDC7003E6AFE /* ViewController.swift in Sources */,
 				CE0A393A270DEDC7003E6AFE /* AppDelegate.swift in Sources */,

@@ -27,21 +27,9 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: - Functions declaration
     func setUI() {
-        setRadius()
         addPassFieldButton()
     }
 
-    func setRadius() {
-        // Setting styles to textfields
-        authEmailField.layer.cornerRadius = 24.0
-        authEmailField.clipsToBounds = true
-        authPassField.layer.cornerRadius = 24.0
-        authPassField.clipsToBounds = true
-        authPassField.layer.borderWidth = 0.5
-        authPassField.layer.borderWidth = 0.5
-        loginButton.layer.cornerRadius = 24.0
-        loginButton.clipsToBounds = true
-    }
 
     func addPassFieldButton() {
         authPassField.rightViewMode = .unlessEditing
@@ -81,10 +69,10 @@ class AuthorizationViewController: UIViewController, UITextFieldDelegate {
         switch textField {
         case authEmailField:
             authEmailField.layer.borderWidth = 0.5
-            authEmailField.layer.borderColor =  UIColor(named: "appGrey")!.cgColor
+            authEmailField.layer.borderColor =  UIColor(named: "appLightGrey")!.cgColor
         case authPassField:
             authPassField.layer.borderWidth = 0.5
-            authPassField.layer.borderColor = UIColor(named: "appGrey")!.cgColor
+            authPassField.layer.borderColor = UIColor(named: "appLightGrey")!.cgColor
         default:
             print("Oops something went wrong")
         }

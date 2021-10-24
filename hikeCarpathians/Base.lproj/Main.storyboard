@@ -27,7 +27,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="1mP-Vu-GBl">
                                 <rect key="frame" x="24" y="407" width="327" height="276"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Електронна адреса*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-UX-3Ba">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Електронна адреса*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-UX-3Ba" customClass="CustomStyledField" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="F14-Ve-s17"/>
@@ -35,12 +35,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Пароль*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkj-R8-Y6U">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Пароль*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkj-R8-Y6U" customClass="CustomStyledField" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="76" width="327" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLf-5w-kRY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLf-5w-kRY" customClass="CustomStyledButton" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="152" width="327" height="48"/>
                                         <color key="backgroundColor" name="appGrey"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,7 +130,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Ваша елкетронна адреса*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zam-14-C1K">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Ваша елкетронна адреса*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zam-14-C1K" customClass="CustomStyledField" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="76" width="327" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -138,7 +138,7 @@
                                             <action selector="restoreFieldEditingChanged:" destination="aj7-lk-1Ax" eventType="editingChanged" id="NXz-ZJ-rSX"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEy-Hm-dEH">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEy-Hm-dEH" customClass="CustomStyledButton" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="152" width="327" height="48"/>
                                         <color key="backgroundColor" name="appGrey"/>
                                         <constraints>
@@ -188,7 +188,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="lbt-lg-2c0">
                                 <rect key="frame" x="24" y="407" width="327" height="276"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Елктронна адреса*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lfs-oJ-INU">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Елктронна адреса*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lfs-oJ-INU" customClass="CustomStyledField" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="3bR-vd-dCn"/>
@@ -201,12 +201,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Пароль*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7C-4X-3NR">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Пароль*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7C-4X-3NR" customClass="CustomStyledField" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="76" width="327" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3S-WY-GCm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3S-WY-GCm" customClass="CustomStyledButton" customModule="hikeCarpathians" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="152" width="327" height="48"/>
                                         <color key="backgroundColor" name="appGrey"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

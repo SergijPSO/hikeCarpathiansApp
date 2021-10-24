@@ -24,20 +24,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setUI() {
-        setRadius()
         addPassFieldButton()
-    }
-    
-    func setRadius() {
-        registrationEmailField.layer.cornerRadius = 24.0
-        registrationEmailField.clipsToBounds = true
-        registrationEmailField.layer.borderWidth = 0.5;
-        registrationEmailField.layer.borderColor = UIColor.lightGray.cgColor;
-        registrationPassField.layer.cornerRadius = 24.0
-        registrationPassField.clipsToBounds = true
-        registrationPassField.layer.borderWidth = 0.5;
-        registrationPassField.layer.borderColor = UIColor.lightGray.cgColor;
-        registerButton.layer.cornerRadius = 24.0
     }
 
     func addPassFieldButton() {
@@ -56,7 +43,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         case false:
             registerButton.backgroundColor = UIColor(named:"appOrange")
         default:
-            registerButton.backgroundColor = UIColor(named:"appGrey")
+            registerButton.backgroundColor = UIColor(named:"appLightGrey")
         }
     }
     
@@ -78,10 +65,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         switch textField {
         case registrationEmailField:
             registrationEmailField.layer.borderWidth = 0.5
-            registrationEmailField.layer.borderColor =  UIColor(named: "appGrey")!.cgColor
+            registrationEmailField.layer.borderColor =  UIColor(named: "appLightGrey")!.cgColor
         case registrationPassField:
             registrationPassField.layer.borderWidth = 0.5
-            registrationPassField.layer.borderColor = UIColor(named: "appGrey")!.cgColor
+            registrationPassField.layer.borderColor = UIColor(named: "appLightGrey")!.cgColor
         default:
             print("Oops something went wrong")
         }

@@ -14,25 +14,12 @@ class RestorePasswordViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
         restorePassEmailField.delegate = self
-    }
-
-    func setUI() {
-        setRadius()
-    }
-
-    func setRadius() {
-        restorePassEmailField.layer.cornerRadius = 24.0
-        restorePassEmailField.clipsToBounds = true
-        restorePassEmailField.layer.borderWidth = 0.5;
-        restorePassEmailField.layer.borderColor = UIColor.lightGray.cgColor;
-        restorePassButton.layer.cornerRadius = 24.0
     }
 
     func toggleButtonState() {
         if restorePassEmailField.text!.isEmpty {
-            restorePassButton.backgroundColor = UIColor(named:"appGrey")
+            restorePassButton.backgroundColor = UIColor(named:"appLightGrey")
         } else {
             restorePassButton.backgroundColor = UIColor(named:"appOrange")
         }
@@ -48,7 +35,7 @@ class RestorePasswordViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == restorePassEmailField {
             restorePassEmailField.layer.borderWidth = 1
-            restorePassEmailField.layer.borderColor = UIColor(named: "appGrey")!.cgColor
+            restorePassEmailField.layer.borderColor = UIColor(named: "appLightGrey")!.cgColor
         }
     }
 
@@ -56,16 +43,8 @@ class RestorePasswordViewController: UIViewController, UITextFieldDelegate {
         if restorePassEmailField.text!.count > 0 {
             restorePassButton.layer.backgroundColor = UIColor(named: "appOrange")!.cgColor
         } else {
-            restorePassButton.layer.backgroundColor = UIColor(named: "appGrey")!.cgColor
+            restorePassButton.layer.backgroundColor = UIColor(named: "appLightGrey")!.cgColor
         }
     }
 
-    /*
-     // MARK: - Navigation
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
 }
