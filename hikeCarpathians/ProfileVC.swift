@@ -30,7 +30,7 @@ class ProfileVC: UIViewController {
         userImageContainer.layer.borderWidth = 4
         userImageContainer.layer.borderColor = UIColor(named:"appOrange")?.cgColor
         profileInfoView.layer.cornerRadius = 10
-        profileInfoView.clipsToBounds = true
+        profileInfoView.clipsToBounds = false
 
         // set the shadow properties
         profileInfoView.layer.shadowColor = UIColor.black.cgColor
@@ -46,6 +46,7 @@ class ProfileVC: UIViewController {
 
         leftUserView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         leftUserImageView.frame = CGRect(x: 10, y: 5, width: 30, height: 30)
+        profileUsernameField.text = "Sergiy Pankiv"
         profileUsernameField.leftViewMode = .always
         profileUsernameField.leftView = leftUserView
 
@@ -59,6 +60,7 @@ class ProfileVC: UIViewController {
         leftAdressImageView.frame = CGRect(x: 10, y: 5, width: 30, height: 30)
         profileAdressField.leftViewMode = .always
         profileAdressField.leftView = leftAdressView
+        profileAdressField.text = "Львів"
 
         // setting profile email textfield icon
         let leftEmailImageView = UIImageView()
@@ -70,6 +72,7 @@ class ProfileVC: UIViewController {
         leftEmailImageView.frame = CGRect(x: 10, y: 5, width: 30, height: 30)
         profileEmailField.leftViewMode = .always
         profileEmailField.leftView = leftEmailView
+        profileEmailField.text = "my-email@gmail.com"
 
         // setting profile phone textfield icon
         let leftPhoneImageView = UIImageView()
@@ -81,6 +84,7 @@ class ProfileVC: UIViewController {
         leftPhoneImageView.frame = CGRect(x: 10, y: 5, width: 30, height: 30)
         profilePhoneField.leftViewMode = .always
         profilePhoneField.leftView = leftPhoneView
+        profilePhoneField.text = "0993354026"
 
 //         setting profile password textfield icon
         let leftPassImageView = UIImageView()
@@ -90,6 +94,7 @@ class ProfileVC: UIViewController {
 
         leftPassView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         leftPassImageView.frame = CGRect(x: 10, y: 5, width: 30, height: 30)
+        profilePassField.text = "12345"
         profilePassField.leftViewMode = .always
         profilePassField.leftView = leftPassView
     }
