@@ -7,13 +7,17 @@
 
 import UIKit
 
-class ProfileVC: UIViewController {
+class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
 
+    @IBOutlet weak var imageAvatar: UIImageView!
     @IBOutlet weak var userImageContainer: UIView!
     @IBOutlet weak var profileInfoView: UIStackView!
     @IBOutlet weak var profileUsernameField: CustomStyledField!
     @IBOutlet weak var profileAdressField: CustomStyledField!
     @IBOutlet weak var profileEmailField: CustomStyledField!
+
+    @IBOutlet weak var userAvatarImage: UIImageView!
+    let imagePicker = UIImagePickerController()
 
     @IBOutlet weak var profilePhoneField: CustomStyledField!
     @IBOutlet weak var profilePassField: CustomStyledField!
@@ -21,10 +25,38 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setProfileUI()
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func imagePickButton(_ sender: Any) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+
+        alert.addAction(UIAlertAction(title:"Gallery", style: .default, handler: {(button) in
+            self.imagePicker.sourceType = .photoLibrary
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+
+        alert.addAction(UIAlertAction(title:"Camera", style: .default, handler: {(button) in
+            self.imagePicker.sourceType = .camera
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}
+        userAvatarImage.image = pickedImage
+        dismiss(animated: true, completion: nil)
+    }
+
     func setProfileUI() {
+        imageAvatar.layer.cornerRadius = imageAvatar.frame.height / 2
+        imageAvatar.layer.cornerRadius = imageAvatar.frame.width / 2
         userImageContainer.layer.cornerRadius = userImageContainer.frame.height / 2
         userImageContainer.layer.cornerRadius = userImageContainer.frame.width / 2
         userImageContainer.layer.borderWidth = 4
@@ -110,3 +142,4 @@ class ProfileVC: UIViewController {
     */
 
 }
+

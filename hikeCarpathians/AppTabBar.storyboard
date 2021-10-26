@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsN-77-VZB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsN-77-VZB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -87,24 +87,27 @@
                                                 <rect key="frame" x="145" y="0.0" width="100" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigUserIcon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KhU-nE-WCa">
-                                                        <rect key="frame" x="15" y="15" width="70" height="70"/>
+                                                        <rect key="frame" x="4" y="4" width="92" height="92"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="87n-Nf-kMY"/>
-                                                    <constraint firstItem="KhU-nE-WCa" firstAttribute="leading" secondItem="8Yt-xI-jiW" secondAttribute="leading" constant="15" id="VxE-zl-tz0"/>
+                                                    <constraint firstItem="KhU-nE-WCa" firstAttribute="leading" secondItem="8Yt-xI-jiW" secondAttribute="leading" constant="4" id="VxE-zl-tz0"/>
                                                     <constraint firstAttribute="height" constant="100" id="f7d-Vw-13l"/>
-                                                    <constraint firstAttribute="bottom" secondItem="KhU-nE-WCa" secondAttribute="bottom" constant="15" id="iLF-gl-wYT"/>
-                                                    <constraint firstAttribute="trailing" secondItem="KhU-nE-WCa" secondAttribute="trailing" constant="15" id="m55-sj-pB7"/>
-                                                    <constraint firstItem="KhU-nE-WCa" firstAttribute="top" secondItem="8Yt-xI-jiW" secondAttribute="top" constant="15" id="yQy-A8-7h1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="KhU-nE-WCa" secondAttribute="bottom" constant="4" id="iLF-gl-wYT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KhU-nE-WCa" secondAttribute="trailing" constant="4" id="m55-sj-pB7"/>
+                                                    <constraint firstItem="KhU-nE-WCa" firstAttribute="top" secondItem="8Yt-xI-jiW" secondAttribute="top" constant="4" id="yQy-A8-7h1"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24B-A9-dJb">
-                                                <rect key="frame" x="253" y="0.0" width="48" height="38"/>
+                                                <rect key="frame" x="245" y="0.0" width="48" height="38"/>
                                                 <color key="tintColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="editIcon" title=""/>
+                                                <connections>
+                                                    <action selector="imagePickButton:" destination="HPI-Ks-QJN" eventType="touchUpInside" id="oRh-qR-XHf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,7 +116,7 @@
                                             <constraint firstAttribute="bottom" secondItem="8Yt-xI-jiW" secondAttribute="bottom" id="Fga-X2-FSf"/>
                                             <constraint firstAttribute="bottom" secondItem="8Yt-xI-jiW" secondAttribute="bottom" id="Qd6-Gk-8v1"/>
                                             <constraint firstItem="8Yt-xI-jiW" firstAttribute="top" secondItem="24B-A9-dJb" secondAttribute="top" id="d5h-Rw-IzU"/>
-                                            <constraint firstItem="24B-A9-dJb" firstAttribute="leading" secondItem="8Yt-xI-jiW" secondAttribute="trailing" constant="8" symbolic="YES" id="jjf-nf-fDL"/>
+                                            <constraint firstItem="24B-A9-dJb" firstAttribute="leading" secondItem="8Yt-xI-jiW" secondAttribute="trailing" id="jjf-nf-fDL"/>
                                             <constraint firstItem="8Yt-xI-jiW" firstAttribute="centerX" secondItem="bnd-v6-XxZ" secondAttribute="centerX" id="lfZ-zP-t2W"/>
                                         </constraints>
                                     </view>
@@ -149,20 +152,24 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <edgeInsets key="layoutMargins" top="16" left="8" bottom="16" right="8"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="155" translatesAutoresizingMaskIntoConstraints="NO" id="dKS-r4-9TT">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="146" translatesAutoresizingMaskIntoConstraints="NO" id="dKS-r4-9TT">
                                         <rect key="frame" x="20" y="604.66666666666663" width="350" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbq-sN-HY1">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="31"/>
                                                 <color key="tintColor" name="appOrange"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Вийти"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmq-LD-iKQ">
-                                                <rect key="frame" x="252.66666666666671" y="0.0" width="97.333333333333343" height="31"/>
+                                                <rect key="frame" x="248" y="0.0" width="102" height="31"/>
                                                 <color key="tintColor" name="appOrange"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Зберегти"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Зберегти"/>
+                                                    </attributedString>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -197,18 +204,20 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Профіль" image="profileIcon" id="1vC-pu-YOT"/>
                     <connections>
+                        <outlet property="imageAvatar" destination="KhU-nE-WCa" id="5yK-yl-qoj"/>
                         <outlet property="profileAdressField" destination="SBR-DO-XtJ" id="WSx-7T-YJ3"/>
                         <outlet property="profileEmailField" destination="KZP-3L-KXn" id="eoC-2S-7aH"/>
                         <outlet property="profileInfoView" destination="dNf-VK-3kN" id="MHD-7K-QXD"/>
                         <outlet property="profilePassField" destination="igf-Pj-pjP" id="KSo-F0-IsI"/>
                         <outlet property="profilePhoneField" destination="9JR-Tw-gbZ" id="loW-9N-o1r"/>
                         <outlet property="profileUsernameField" destination="bui-9T-sYI" id="pKv-hy-A1J"/>
+                        <outlet property="userAvatarImage" destination="KhU-nE-WCa" id="Z6k-vJ-XJ4"/>
                         <outlet property="userImageContainer" destination="8Yt-xI-jiW" id="D1T-Gm-LnL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1j-yQ-c0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="441"/>
+            <point key="canvasLocation" x="764.61538461538464" y="440.75829383886253"/>
         </scene>
     </scenes>
     <resources>
