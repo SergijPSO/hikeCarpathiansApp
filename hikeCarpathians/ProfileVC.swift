@@ -7,12 +7,12 @@
 
 import UIKit
 
-class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imageAvatar: UIImageView!
     @IBOutlet weak var userImageContainer: UIView!
     @IBOutlet weak var profileInfoView: UIStackView!
-    @IBOutlet weak var profileUsernameField: CustomStyledField!
+    @IBOutlet weak var profileUsernameField: UITextField!
     @IBOutlet weak var profileAdressField: CustomStyledField!
     @IBOutlet weak var profileEmailField: CustomStyledField!
 
@@ -22,11 +22,22 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigatio
     @IBOutlet weak var profilePhoneField: CustomStyledField!
     @IBOutlet weak var profilePassField: CustomStyledField!
 
+    let leftUserImageView = UIImageView()
+    let leftAdressImageView = UIImageView()
+    let leftEmailImageView = UIImageView()
+    let leftPhoneImageView = UIImageView()
+    let leftPassImageView = UIImageView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setProfileUI()
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
+        profileUsernameField.delegate = self
+        profileAdressField.delegate = self
+        profileEmailField.delegate = self
+        profilePhoneField.delegate = self
+        profilePassField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -71,7 +82,6 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigatio
         profileInfoView.layer.shadowRadius = 8.0
 
         // setting profile username textfield icon
-        let leftUserImageView = UIImageView()
         leftUserImageView.image = UIImage(named: "userIcon")
         let leftUserView = UIView()
         leftUserView.addSubview(leftUserImageView)
@@ -83,7 +93,6 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigatio
         profileUsernameField.leftView = leftUserView
 
         // setting profile location textfield icon
-        let leftAdressImageView = UIImageView()
         leftAdressImageView.image = UIImage(named: "locationIcon")
         let leftAdressView = UIView()
         leftAdressView.addSubview(leftAdressImageView)
@@ -95,7 +104,6 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigatio
         profileAdressField.text = "Львів"
 
         // setting profile email textfield icon
-        let leftEmailImageView = UIImageView()
         leftEmailImageView.image = UIImage(named: "emailIcon")
         let leftEmailView = UIView()
         leftEmailView.addSubview(leftEmailImageView)
@@ -107,7 +115,6 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigatio
         profileEmailField.text = "my-email@gmail.com"
 
         // setting profile phone textfield icon
-        let leftPhoneImageView = UIImageView()
         leftPhoneImageView.image = UIImage(named: "phoneIcon")
         let leftPhoneView = UIView()
         leftPhoneView.addSubview(leftPhoneImageView)
@@ -118,8 +125,7 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigatio
         profilePhoneField.leftView = leftPhoneView
         profilePhoneField.text = "0993354026"
 
-//         setting profile password textfield icon
-        let leftPassImageView = UIImageView()
+        // setting profile password textfield icon
         leftPassImageView.image = UIImage(named: "passIcon")
         let leftPassView = UIView()
         leftPassView.addSubview(leftPassImageView)
@@ -131,15 +137,41 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigatio
         profilePassField.leftView = leftPassView
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor(named: "appOrange")!.cgColor
+        switch textField {
+        case profileUsernameField:
+            leftUserImageView.image = UIImage(named: "userIconActive")
+        case profileAdressField:
+            leftAdressImageView.image = UIImage(named: "locationIconActive")
+        case profileEmailField:
+            leftEmailImageView.image = UIImage(named: "emailIconActive")
+        case profilePhoneField:
+            leftPhoneImageView.image = UIImage(named: "phoneIconActive")
+        case profilePassField:
+            leftPassImageView.image = UIImage(named: "passIconActive")
+        default:
+            break
+        }
     }
-    */
 
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.layer.borderWidth = 0.5
+        textField.layer.borderColor =  UIColor(named: "appLightGrey")!.cgColor
+        switch textField {
+        case profileUsernameField:
+            leftUserImageView.image = UIImage(named: "userIcon")
+        case profileAdressField:
+            leftAdressImageView.image = UIImage(named: "locationIcon")
+        case profileEmailField:
+            leftEmailImageView.image = UIImage(named: "emailIcon")
+        case profilePhoneField:
+            leftPhoneImageView.image = UIImage(named: "phoneIcon")
+        case profilePassField:
+            leftPassImageView.image = UIImage(named: "passIcon")
+        default:
+            break
+        }
+    }
 }
-
